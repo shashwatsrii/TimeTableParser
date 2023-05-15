@@ -1,0 +1,127 @@
+
+*{
+  margin: 0;
+}
+  .LandingContainer{
+    display: flex;
+    align-items: center;  
+    flex-direction: column;  
+}
+.HeaderLanding{
+    display: flex;
+    align-items: center;
+    width: 96%;
+    background-color: #add8e6;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}  
+.buttonsHeader{
+  display: flex;
+  gap:0.5vw
+}
+.LandingLogo{
+    padding-right: 5%;
+}
+.LandingHeaderTexts{
+    display: flex;
+    width: 75vw;
+    flex-direction: column;
+}
+.LoginPageButtonLanding{
+    background-color: white;
+    padding: 1.2%;
+    border-radius: 5px;
+    color: #72a7b9;
+}
+#activeSheet{
+  background-color: red;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#LandingLogo{
+    width: 8rem;
+}
+.PPHeadingLanding{
+  font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color:#72a7b9   ;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.box{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color:#add8e6;
+    color:black;
+}
+
+.headof_list{
+    margin-top: 10px;
+    color: #090f4f;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.5rem;
+}
+.h{
+    padding-right: 8rem;
+}
+.search-input {
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    border: 3px solid #add8e6;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.search-input:hover {
+    background-color: #b7f7ff;
+}
+.header-box {
+    text-align: center;
+    font-size: x-large;
+    color: black;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+.button {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 3px solid #72a7b9;
+    margin: 10px;
+    background-color: #add8e6;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Footer{
+  margin-top: 5%;
+  background-color:#add8e6;
+  color: black;
+}
+.Footer-Copyright{
+  display: flex;
+  padding-top: 2vh;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

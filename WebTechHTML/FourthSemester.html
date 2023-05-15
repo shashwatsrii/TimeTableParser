@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Table JUIT</title>
+        <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="LandingContainer">
+                <div class='HeaderLanding'>
+                    <div class='LandingLogo'><img id='LandingLogo' src="Logo.png" /></div>
+                    <div class='LandingHeaderTexts'>
+                        <div class='PPHeadingLanding'>
+                            <b> Time Table </b>
+                        </div>
+                        <div class='JUITHeadingLanding'>
+                            Jaypee University Of Information Technology , Solan.
+                        </div>
+                    </div>
+                    <div class="buttonsHeader">
+                        <div class='LoginPageButtonLanding'>
+                            2nd Semester
+                        </div>
+                        <div id="activeSheet" class='LoginPageButtonLanding'>
+                            4th Semester
+                        </div>
+                        <div class='LoginPageButtonLanding'>
+                           <a href="/SixthSemester.html">
+                               6th Semester
+                           </a> 
+                        </div>
+                        <div class='LoginPageButtonLanding'>
+                            <a href="/EighthSemester.html">
+                                8th Semester
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+    <div class="header-box">
+            <!-- <label for="search-input-1">Batch:</label><br> -->
+            <input type="text" id="search-input-1" class="search-input" placeholder="Enter Batch" list="search-suggestions">
+            <datalist id="search-suggestions">
+                <option value="CS410">CS410</option>
+                <option value="CE41">CE41</option>
+                <option value="CS41">CS41</option>
+                <option value="CS42">CS42</option>
+                <option value="CS43">CS43</option>
+                <option value="CS44">CS44</option>
+                <option value="CS45">CS45</option>
+                <option value="CS46">CS46</option>
+                <option value="CS47">CS47</option>
+                <option value="CS48">CS48</option>
+                <option value="CS49">CS49</option>
+                <option value="EC42">EC41</option>
+                <option value="EM41">EM41</option>
+                <option value="CSM">CSM</option>
+                <option value="BIM">BIM</option>
+                <option value="BI41">BI41</option>
+                <option value="BT41">BT41</option>
+                <option value="IT41">IT41</option>
+                <option value="IT42">IT42</option>
+            </datalist>
+            <button onclick="searchTable('search-input-1')" class="button">Search</button><br />
+            <!-- <label for="search-input-2">Faculty: </label><br> -->
+            <input type="text" id="search-input-2" placeholder="Enter Faculty" class="search-input" list="search-suggestions-2">
+            <datalist id="search-suggestions-2">
+                <option value="RJK">RJK</option>
+                <option value="RRA">RRA</option>
+                <option value="PKG">PKG</option>
+                <option value="BKP">BKP</option>
+                <option value="TGM">TGM</option>
+                <option value="UDB">UDB</option>
+                <option value="NTJ">NTJ</option>
+                <option value="PKP">PKP</option>
+                <option value="NJP">NJP</option>
+                <option value="TTS">TTS</option>
+                <option value="CGP">CGP</option>
+                <option value="SDS">SDS</option>
+                <option value="JTV">JTV</option>
+                <option value="DHA">DHA</option>
+                <option value="MBI">MBI</option>
+                <option value="ASA">ASA</option>
+                <option value="PTK">PTK</option>
+                <option value="PDG">PDG</option>
+                <option value="AMN">AMN</option>
+                <option value="SGL">SGL</option>
+                <option value="SWT">SWT</option>
+                <option value="SML">SML</option>
+                <option value="SST">SST</option>
+                <option value="RKU">RKU</option>
+                <option value="PNS">PNS</option>
+                <option value="RRA">RRA</option>
+                <option value="RKI">RKI</option>
+                <option value="HRI">HRI</option>
+                <option value="SHR">SHR</option>
+                <option value="SLD">SLD</option>
+                <option value="NFK">NFK</option>
+                <option value="AKJ">AKJ</option>
+                <option value="ALK">ALK</option>
+                <option value="NVN">NVN</option>
+                <option value="VKB">VKB</option>
+                <option value="EMP">EMP</option>
+                <option value="PKR">PKR</option>
+                <option value="RKB">RKB</option>
+            </datalist>
+            <button onclick="searchTable('search-input-2')" class="button">Search</button><br />
+            
+            <!-- <label for="search-input-4">Venue: </label><br> -->
+            <input type="text" id="search-input-4" placeholder="Enter Venue" class="search-input" list="search-suggestions-4">
+            <datalist id="search-suggestions-4">
+                <option value="CR1">CR1</option>
+                <option value="CR2">CR2</option>
+                <option value="CR3">CR3</option>
+                <option value="CR4">CR4</option>
+                <option value="CR5">CR5</option>
+                <option value="CR6">CR6</option>
+                <option value="CR7">CR7</option>
+                <option value="CR8">CR8</option>
+                <option value="CR9">CR9</option>
+                <option value="CR10">CR10</option>
+                <option value="CR11">CR11</option>
+                <option value="CR12">CR12</option>
+                <option value="CR13">CR13</option>
+                <option value="CR14">CR14</option>
+                <option value="TR1">TR1</option>
+                <option value="TR12">TR2</option>
+                <option value="TR3">TR3</option>
+                <option value="TR4">TR4</option>
+                <option value="TR5">TR5</option>
+                <option value="TR6">TR6</option>
+                <option value="TR7">TR7</option>
+                <option value="TR8">TR8</option>
+                <option value="TR9">TR9</option>
+                <option value="CL1">CL1</option>
+                <option value="CL2">CL2</option>
+                <option value="CL3">CL3</option>
+                <option value="CL4">CL4</option>
+                <option value="CL5">CL5</option>
+                <option value="CL6">CL6</option>
+                <option value="CL7">CL7</option>
+                <option value="CL8">CL8</option>
+                <option value="CL9">CL9</option>
+                <option value="CL10">CL10</option>
+                <option value="CL11">CL11</option>
+                <option value="CADLAB">CADLAB</option>
+                <option value="GEOLAB">GEOLAB</option>
+                <option value="LT1">LT1</option>
+                <option value="LT2">LT2</option>
+                <option value="LT3">LT3</option>
+                <option value="TR1">TR1</option>
+                <option value="TR2">TR2</option>
+                <option value="TR3">TR3</option>
+                <option value="TR4">TR4</option>
+                <option value="TR5">TR5</option>
+                <option value="TR6">TR6</option>
+                <option value="TR7">TR7</option>
+                <option value="ECL1">ECL1</option>
+                <option value="ECL2">ECL2</option>
+                <option value="ECL3">ECL3</option>
+                <option value="ECL4">ECL4</option>
+                <option value="ECL5">ECL5</option>
+            </datalist>
+            <button onclick="searchTable('search-input-4')" class="button">Search</button>
+    </div>
+    <div id="table-container"></div>
+    <div class='Footer'>
+        <div class='Footer-Content'>
+          <div class='Footer-Text'>
+              <div class='Footer-Details'>
+                      <h1 class='Contact-Us'>Contact Us</h1>
+                      <div class='Footer-Line_l1'></div>
+                      <div class='Footer-Details footertext'>
+                      Jaypee University Of Information Technology<br/>
+                      Waknaghat, HP - 173234<br/>
+                      India<br/>
+                      Phone: +xxxxxxxx<br/>
+                      Email: example@juitsolan.in<br/>  
+                      </div>
+  
+                      <div class='Footer-Socials'>    
+                      <Link to='//instagram.com/jyc.technical.club?utm_medium=copy_link' class='Sociallinks'><BsInstagram/></Link>
+                      <a href='tel:' class='Sociallinks'><BsFillTelephoneFill/></a>
+                      <a href='mailto:' class='Sociallinks'><FaGoogle/></a>
+              </div>  
+          </div>
+        </div>
+          <div class='Footer-Logo'></div>
+        </div>
+          <div class='Footer-Copyright'>
+              Copyright © Shashwat Srivastava<br/> 
+        </div>
+  
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
